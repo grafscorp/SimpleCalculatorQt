@@ -47,7 +47,7 @@
       <x>0</x>
       <y>0</y>
       <width>424</width>
-      <height>626</height>
+      <height>633</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="MainContainer">
@@ -116,7 +116,7 @@
         <number>14</number>
        </property>
        <property name="topMargin">
-        <number>0</number>
+        <number>8</number>
        </property>
        <property name="rightMargin">
         <number>14</number>
@@ -157,9 +157,14 @@
           <bool>false</bool>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(160, 160, 160);
+          <string notr="true">QPushButton#ACBtn{
+background-color: rgb(160, 160, 160);
 color: rgb(0, 0, 0);
-border-radius: 44px</string>
+border-radius: 44px;
+}
+QPushButton#ACBtn:Hover{
+	background-color: rgb(255, 255, 255);
+}</string>
          </property>
          <property name="text">
           <string>AC</string>
@@ -948,9 +953,14 @@ border-radius: 44px</string>
           <bool>false</bool>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color:rgb(51, 51, 51);
+          <string notr="true">QPushButton{
+background-color:rgb(51, 51, 51);
 color: rgb(255, 255, 255);
-border-radius: 44px</string>
+border-radius: 44px;
+}
+QPushButton:hover{
+	background-color: rgb(255, 255, 255);
+}</string>
          </property>
          <property name="text">
           <string>0</string>
