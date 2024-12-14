@@ -8,31 +8,31 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     ui->InputedLabel->setText("0");
     //Operations
-    connect(ui->ACBtn,SIGNAL(clicked()),this,SLOT(cleanInputLabel()));
-    connect(ui->SignBtn, SIGNAL(clicked()),this, SLOT(asign()));
+    connect(ui->grACBtn,SIGNAL(clicked()),this,SLOT(cleanInputLabel()));
+    connect(ui->grSignBtn, SIGNAL(clicked()),this, SLOT(asign()));
 
-    connect(ui->PlusBtn,SIGNAL(clicked()), this, SLOT(operation()));
-    connect(ui->MinusBtn,SIGNAL(clicked()), this, SLOT(operation()));
-    connect(ui->DevidedBtn,SIGNAL(clicked()), this, SLOT(operation()));
-    connect(ui->MultupliedBtn,SIGNAL(clicked()), this, SLOT(operation()));
+    connect(ui->orPlusBtn,SIGNAL(clicked()), this, SLOT(operation()));
+    connect(ui->orMinusBtn,SIGNAL(clicked()), this, SLOT(operation()));
+    connect(ui->orDevidedBtn,SIGNAL(clicked()), this, SLOT(operation()));
+    connect(ui->orMultupliedBtn,SIGNAL(clicked()), this, SLOT(operation()));
 
-    connect(ui->EqualBtn,SIGNAL(clicked()), this, SLOT(equal()));
+    connect(ui->orEqualBtn,SIGNAL(clicked()), this, SLOT(equal()));
 
-    connect(ui->ProcentBtn, SIGNAL(clicked()),this,SLOT(percent()));
+    connect(ui->grProcentBtn, SIGNAL(clicked()),this,SLOT(percent()));
 
-    connect(ui->PointBtn,SIGNAL(clicked()),this,SLOT(addPoint()));
+    connect(ui->drPointBtn,SIGNAL(clicked()),this,SLOT(addPoint()));
 
     //DigitalsBTN
-    connect(ui->ZeroBtn,SIGNAL(clicked()),this,SLOT(addDigital()));
-    connect(ui->OneBtn,SIGNAL(clicked()),this,SLOT(addDigital()));
-    connect(ui->TwoBtn,SIGNAL(clicked()),this,SLOT(addDigital()));
-    connect(ui->ThreeBtn,SIGNAL(clicked()),this,SLOT(addDigital()));
-    connect(ui->FourBtn,SIGNAL(clicked()),this,SLOT(addDigital()));
-    connect(ui->FiveBtn,SIGNAL(clicked()),this,SLOT(addDigital()));
-    connect(ui->SixBtn,SIGNAL(clicked()),this,SLOT(addDigital()));
-    connect(ui->SevenBtn,SIGNAL(clicked()),this,SLOT(addDigital()));
-    connect(ui->EightBtn,SIGNAL(clicked()),this,SLOT(addDigital()));
-    connect(ui->NineBtn,SIGNAL(clicked()),this,SLOT(addDigital()));
+    connect(ui->drZeroBtn,SIGNAL(clicked()),this,SLOT(addDigital()));
+    connect(ui->drOneBtn,SIGNAL(clicked()),this,SLOT(addDigital()));
+    connect(ui->drTwoBtn,SIGNAL(clicked()),this,SLOT(addDigital()));
+    connect(ui->drThreeBtn,SIGNAL(clicked()),this,SLOT(addDigital()));
+    connect(ui->drFourBtn,SIGNAL(clicked()),this,SLOT(addDigital()));
+    connect(ui->drFiveBtn,SIGNAL(clicked()),this,SLOT(addDigital()));
+    connect(ui->drSixBtn,SIGNAL(clicked()),this,SLOT(addDigital()));
+    connect(ui->drSevenBtn,SIGNAL(clicked()),this,SLOT(addDigital()));
+    connect(ui->drEightBtn,SIGNAL(clicked()),this,SLOT(addDigital()));
+    connect(ui->drNineBtn,SIGNAL(clicked()),this,SLOT(addDigital()));
 
 
 }
@@ -127,6 +127,8 @@ void MainWindow::addPoint()
     }
     ui->InputedLabel->setText(ui->InputedLabel->text() + ".");
 }
+
+
 
 
 
