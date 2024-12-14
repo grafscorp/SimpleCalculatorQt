@@ -41,7 +41,7 @@
    <string notr="true">background-color: black;</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -72,17 +72,36 @@
          </property>
          <property name="font">
           <font>
-           <pointsize>44</pointsize>
+           <pointsize>35</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+</string>
+         </property>
+         <property name="lineWidth">
+          <number>1</number>
          </property>
          <property name="text">
           <string>0</string>
          </property>
+         <property name="textFormat">
+          <enum>Qt::TextFormat::AutoText</enum>
+         </property>
          <property name="alignment">
           <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
          </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
          <property name="margin">
           <number>0</number>
+         </property>
+         <property name="indent">
+          <number>-1</number>
          </property>
         </widget>
        </item>
@@ -131,6 +150,9 @@
            <bold>false</bold>
           </font>
          </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="autoFillBackground">
           <bool>false</bool>
          </property>
@@ -171,6 +193,9 @@ border-radius: 44px</string>
           <font>
            <pointsize>24</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
          </property>
          <property name="autoFillBackground">
           <bool>false</bool>
@@ -213,6 +238,9 @@ border-radius: 44px</string>
            <pointsize>24</pointsize>
           </font>
          </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="autoFillBackground">
           <bool>false</bool>
          </property>
@@ -254,6 +282,9 @@ border-radius: 44px</string>
            <pointsize>30</pointsize>
            <bold>true</bold>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
          </property>
          <property name="autoFillBackground">
           <bool>false</bool>
@@ -316,6 +347,9 @@ border-radius: 44px</string>
            <bold>false</bold>
           </font>
          </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="autoFillBackground">
           <bool>false</bool>
          </property>
@@ -357,6 +391,9 @@ border-radius: 44px</string>
            <pointsize>24</pointsize>
            <bold>false</bold>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
          </property>
          <property name="autoFillBackground">
           <bool>false</bool>
@@ -400,6 +437,9 @@ border-radius: 44px</string>
            <bold>false</bold>
           </font>
          </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="autoFillBackground">
           <bool>false</bool>
          </property>
@@ -441,6 +481,9 @@ border-radius: 44px</string>
            <pointsize>30</pointsize>
            <fontweight>ExtraBold</fontweight>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
          </property>
          <property name="autoFillBackground">
           <bool>false</bool>
@@ -503,6 +546,9 @@ border-radius: 44px</string>
            <bold>false</bold>
           </font>
          </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="autoFillBackground">
           <bool>false</bool>
          </property>
@@ -544,6 +590,9 @@ border-radius: 44px</string>
            <pointsize>24</pointsize>
            <bold>false</bold>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
          </property>
          <property name="autoFillBackground">
           <bool>false</bool>
@@ -587,6 +636,9 @@ border-radius: 44px</string>
            <bold>false</bold>
           </font>
          </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="autoFillBackground">
           <bool>false</bool>
          </property>
@@ -629,6 +681,9 @@ border-radius: 44px</string>
            <bold>false</bold>
           </font>
          </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="autoFillBackground">
           <bool>false</bool>
          </property>
@@ -665,7 +720,7 @@ border-radius: 44px</string>
         <number>14</number>
        </property>
        <item>
-        <widget class="QPushButton" name="FirstBtn">
+        <widget class="QPushButton" name="OneBtn">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
            <horstretch>0</horstretch>
@@ -689,6 +744,9 @@ border-radius: 44px</string>
            <pointsize>24</pointsize>
            <bold>false</bold>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
          </property>
          <property name="autoFillBackground">
           <bool>false</bool>
@@ -707,7 +765,7 @@ border-radius: 44px</string>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="SecondBtn">
+        <widget class="QPushButton" name="TwoBtn">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
            <horstretch>0</horstretch>
@@ -731,6 +789,9 @@ border-radius: 44px</string>
            <pointsize>24</pointsize>
            <bold>false</bold>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
          </property>
          <property name="autoFillBackground">
           <bool>false</bool>
@@ -749,7 +810,7 @@ border-radius: 44px</string>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="ThirdBtn">
+        <widget class="QPushButton" name="ThreeBtn">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
            <horstretch>0</horstretch>
@@ -773,6 +834,9 @@ border-radius: 44px</string>
            <pointsize>24</pointsize>
            <bold>false</bold>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
          </property>
          <property name="autoFillBackground">
           <bool>false</bool>
@@ -816,6 +880,9 @@ border-radius: 44px</string>
            <bold>false</bold>
           </font>
          </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="autoFillBackground">
           <bool>false</bool>
          </property>
@@ -848,7 +915,7 @@ border-radius: 44px</string>
        <item>
         <widget class="QPushButton" name="ZeroBtn">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
@@ -862,7 +929,7 @@ border-radius: 44px</string>
          <property name="maximumSize">
           <size>
            <width>600</width>
-           <height>600</height>
+           <height>88</height>
           </size>
          </property>
          <property name="font">
@@ -870,6 +937,9 @@ border-radius: 44px</string>
            <pointsize>24</pointsize>
            <bold>false</bold>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
          </property>
          <property name="layoutDirection">
           <enum>Qt::LayoutDirection::LeftToRight</enum>
@@ -922,6 +992,9 @@ border-radius: 44px</string>
            <bold>false</bold>
           </font>
          </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="autoFillBackground">
           <bool>false</bool>
          </property>
@@ -963,6 +1036,9 @@ border-radius: 44px</string>
            <pointsize>40</pointsize>
            <bold>false</bold>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
          </property>
          <property name="autoFillBackground">
           <bool>false</bool>
