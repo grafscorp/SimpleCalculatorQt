@@ -1,6 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include <iostream>
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -49,7 +49,7 @@ void MainWindow::addDigital()
         ui->InputedLabel->setText(senderBtn->text());
     else{
         QString newLabelText = QString(ui->InputedLabel->text() + senderBtn->text());
-        std::cout << ui->InputedLabel->text().toDouble() << std::endl;
+
         newLabelText = QString::number(newLabelText.toDouble(),'g',9);
         ui->InputedLabel->setText(newLabelText);
     }
@@ -84,7 +84,6 @@ void MainWindow::operation()
 void MainWindow::equal( )
 {
     if (firstNum == 0) return;
-    std::cout<<":A";
     double result;
     switch (operationChar) {
     case '+':
