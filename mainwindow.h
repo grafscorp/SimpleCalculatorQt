@@ -30,8 +30,6 @@ private:
 private slots:
     void addDigital();
 
-    void updateInputLabel();
-
     void cleanInputLabel();
 
     void asign();

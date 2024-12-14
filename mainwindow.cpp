@@ -128,11 +128,6 @@ void MainWindow::addPoint()
     ui->InputedLabel->setText(ui->InputedLabel->text() + ".");
 }
 
-void MainWindow::updateInputLabel()
-{
-    //ui->InputedLabel->setText(QString::number(newInputLabelText,'g',9));
-    //ui->InputedLabel->setText();
-}
 
 
 
