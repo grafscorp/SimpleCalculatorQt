@@ -39,5 +39,6 @@ private slots:
     void percent();
 
     void addPoint();
+
 };
 #endif // MAINWINDOW_H
